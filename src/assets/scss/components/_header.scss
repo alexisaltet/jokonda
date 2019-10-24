@@ -7,11 +7,13 @@ header {
   justify-content: center;
   z-index: 100;
   top: 0;
-  // background: white;
+  // background: black;
   padding-top: 36px;
   transition: all .3s ease;
   position: fixed;
-  background: white;
+  color: white;
+  // border-bottom: 2px solid white;
+  padding-bottom: 120px;
   &.fade-in {
     padding-top: 0;
     // @include box-shadow;
@@ -27,7 +29,7 @@ header {
     margin-top: 0;
     padding-left: 0;
     span {
-      color: black;
+      // color: black;
       // color: #ff0000;
       // color: darkblue;
       // color: FireBrick;
@@ -53,7 +55,6 @@ nav {
     margin-left: 45px;
     margin-top: spacing(base);
     line-height: 24px;
-    color: #888;
     cursor: pointer;
     // color: darkblue;
     &:hover {
@@ -61,7 +62,6 @@ nav {
     }
   }
   .selected {
-    color: black;
     position: relative;
     &:before {
       // position: absolute;

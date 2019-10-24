@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grid CSS | Testing</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+
+  <div id="dummyGrid" class="dummy-grid" style="display:none;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-1">&nbsp;</div>
+        <div class="col-md-1">&nbsp;</div>
+        <div class="col-md-1">&nbsp;</div>
+        <div class="col-md-1">&nbsp;</div>
+        <div class="col-md-1">&nbsp;</div>
+        <div class="col-md-1">&nbsp;</div>
+        <div class="col-md-1">&nbsp;</div>
+        <div class="col-md-1">&nbsp;</div>
+        <div class="col-md-1">&nbsp;</div>
+        <div class="col-md-1">&nbsp;</div>
+        <div class="col-md-1">&nbsp;</div>
+        <div class="col-md-1">&nbsp;</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <header>
+    <a href="template_1.html" class="brand"><span>un studio</span></a>
+      <nav>
+        <span class="nav-item lead selected">portfolio</span>
+        <span class="nav-item lead">à propos</span>
+        <span class="nav-item lead">journal</span>
+      </nav>
+  </header> -->
+
+
+
+
+
+      <!-- <div class="alpha white exte"><span class="">
+        un studio  est une <br>
+    agence de</span> <span class="">creation!</span></div> -->
+
+
+  <!-- <div class="float-text">
+    Item 1 &nbsp;/&nbsp; Itemm 2 &nbsp;/&nbsp; Item 3 &nbsp;/&nbsp;
+  </div> -->
+
+
+  <div class="scene">
+    <div class="card">
+      <div class="card__face card__face--front">
+        <div class="alpha  exte upper"><span>un studio est une agence de création</span></div>
+      </div>
+      <div class="card__face card__face--back">
+        <div class="alpha white exte upper"><span>FIN</span></div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- <main class="home">
+    <section class="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="project-thumb">
+              <div class="project-thumb_img">
+                <img class="logo" src="../assets/img/projects/project_raffinerie/1.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main> -->
+
+  <script>
+      $(function() {
+        $(window).on("keyup", function(e) {
+          if (e.which == 87)
+          $('#dummyGrid').toggle();
+          $('html').toggleClass('baselines');
+          // $('.HL, h1').toggleClass('highlight');
+          // $('.header').toggleClass('borderBottom');
+          // $('.project-header').toggleClass('highlight');
+          // $('h1, h2, h3, p, a').toggleClass('highlight');
+        });
+      });
+
+
+      var card = document.querySelector('.card');
+      card.addEventListener( 'click', function() {
+        card.classList.toggle('is-flipped');
+      });
+  </script>
+</body>

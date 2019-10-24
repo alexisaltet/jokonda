@@ -1,21 +1,28 @@
 // Fonts
 @font-face {
-    font-family: 'Druk Medium';
-    src: url('../fonts/Druk-Medium.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'GrandGothik Extended';
+    src: url('../fonts/PFGrandGothikExtended-Medium.woff') format('woff');
+    font-weight: 500;
+    // font-style: normal;
 }
 @font-face {
-    font-family: 'Druk Wide Bold';
-    src: url('../fonts/DrukTextWide-Bold.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'GrandGothik Extended';
+    src: url('../fonts/PFGrandGothikExtended-Bold.woff') format('woff');
+    font-weight: 600;
+    // font-style: normal;
+}
+
+@font-face {
+    font-family: 'GrandGothik Wide';
+    src: url('../fonts/PFGrandGothikWide-Medium.woff') format('woff');
+    font-weight: 500;
+    // font-style: normal;
 }
 @font-face {
-    font-family: 'Druk Heavy';
-    src: url('../fonts/Druk-Heavy.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'GrandGothik Wide';
+    src: url('../fonts/PFGrandGothikWide-Bold.woff') format('woff');
+    font-weight: 600;
+    // font-style: normal;
 }
 @font-face {
     font-family: 'NHaasGrotesk';
@@ -35,13 +42,108 @@
     font-weight: bold;
     font-style: normal;
 }
-@font-face {
-    font-family: 'APK-Galeria';
-    src: url('../fonts/APK-Galeria-Roman_TRIAL.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
+
+
+.alpha {
+  font-size: 120px;
+  line-height: 1;
+  // margin: 90px;
+  // margin-top: 120px;
+  // -webkit-text-fill-color: transparent;
+  // -webkit-background-clip: text;
+  // background: linear-gradient(#e66465, #9198e5);
+  // background: white;
+  color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // text-align: center;
+  height: 100%;
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    // background: linear-gradient(rgba(0,0,0,.2), black);
+
+  }
+  &.wide {
+    font-family: 'GrandGothik Wide';
+  }
+  &.exte, .exte {
+    font-family: 'GrandGothik Extended';
+  }
+  &.bold {
+    font-weight: 600;
+  }
+  &.upper {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  &.white {
+    color: black;
+    // color: #EBEBEB;
+  }
+  &.center {
+    text-align: right;
+  }
+  &.copy, .copy {
+    font-family: 'NHaasGrotesk';
+  }
+  &.border, .border {
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    color: rgba(255,255,255,0);
+    color: black;
+  }
 }
 
+
+
+
+
+$violet: #4b0e54;
+$orange: #fc4827;
+$cyan: #117da4;
+$green: #4a8065;
+
+.scene {
+  width: 100vw;
+  height: 100vh;
+  padding: 45px;
+  // perspective: 600px;
+  .card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+  }
+}
+
+.card__face {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+}
+
+.card__face--front {
+  background: lightgrey;
+  background: $cyan;
+  color: white;
+}
+
+.card__face--back {
+  background: $orange;
+  transform: rotateX( 180deg );
+}
+
+.card.is-flipped {
+  transform: rotateX(180deg);
+}
 
 
 $baseline: 24px;

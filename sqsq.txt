@@ -1,0 +1,41 @@
+--------------------------------------
+* Objectives *
+--------------------------------------
+
+
+un studio est une agence de création.
+Nous transformons les idées en expériences -
+afin des les matérialiser sur une identité unique.
+
+
+
+
+--------------------------------------
+* Sitemap *
+--------------------------------------
+
+    > Home
+        > Nav = About Porfolio Contact
+        > What they do
+        > Social media
+        > Contact info
+        > Dernier projets
+        > Learn more (Text + Button)
+        > Footer
+
+    > Porfolio
+        > Gallerie
+
+    > Project
+        > Title
+        > Metadata
+        > Text
+        > Photos
+
+    > About
+       > Text
+       > Services
+       > Team
+       > Contact
+       > Clients (optional)
+       > Press (optional)
